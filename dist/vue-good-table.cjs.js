@@ -8524,8 +8524,12 @@ var __vue_render__$4 = function __vue_render__() {
     staticClass: "line-numbers"
   }) : _vm._e(), _vm._v(" "), _vm.selectable ? _c('th', {
     staticClass: "vgt-checkbox-col"
+  }, [_c('div', {
+    staticClass: "form-check"
   }, [_c('input', {
+    staticClass: "form-check-input",
     attrs: {
+      "id": "header-checkbox",
       "type": "checkbox"
     },
     domProps: {
@@ -8535,7 +8539,12 @@ var __vue_render__$4 = function __vue_render__() {
     on: {
       "change": _vm.toggleSelectAll
     }
-  })]) : _vm._e(), _vm._v(" "), _vm._l(_vm.columns, function (column, index) {
+  }), _vm._v(" "), _c('label', {
+    staticClass: "form-check-label",
+    attrs: {
+      "for": "header-checkbox"
+    }
+  })])]) : _vm._e(), _vm._v(" "), _vm._l(_vm.columns, function (column, index) {
     return !column.hidden ? _c('th', {
       key: index,
       "class": _vm.getHeaderClasses(column, index),
@@ -8580,7 +8589,7 @@ var __vue_staticRenderFns__$4 = [];
 var __vue_inject_styles__$4 = undefined;
 /* scoped */
 
-var __vue_scope_id__$4 = "data-v-2d1e3c02";
+var __vue_scope_id__$4 = "data-v-77fc9158";
 /* module identifier */
 
 var __vue_module_identifier__$4 = undefined;
@@ -14979,14 +14988,17 @@ var __vue_render__$6 = function __vue_render__() {
             return _vm.onCheckboxClicked(row, index, $event);
           }
         }
-      }, [_c('input', {
+      }, [_vm._t("checkbox", [_c('input', {
+        staticClass: "vgt-checkbox",
         attrs: {
           "type": "checkbox"
         },
         domProps: {
           "checked": row.vgtSelected
         }
-      })]) : _vm._e(), _vm._v(" "), _vm._l(_vm.columns, function (column, i) {
+      })], {
+        "row": row
+      })], 2) : _vm._e(), _vm._v(" "), _vm._l(_vm.columns, function (column, i) {
         return !column.hidden && column.field ? _c('td', {
           key: i,
           "class": _vm.getClasses(i, 'td', row),

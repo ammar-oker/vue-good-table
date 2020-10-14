@@ -3,11 +3,17 @@
   <tr>
     <th v-if="lineNumbers" class="line-numbers"></th>
     <th v-if="selectable" class="vgt-checkbox-col">
-      <input
-        type="checkbox"
-        :checked="allSelected"
-        :indeterminate.prop="allSelectedIndeterminate"
-        @change="toggleSelectAll" />
+      <div class="form-check">
+        <input
+            id="header-checkbox"
+            type="checkbox"
+            :checked="allSelected"
+            :indeterminate.prop="allSelectedIndeterminate"
+            class="form-check-input"
+            @change="toggleSelectAll"
+        />
+        <label for="header-checkbox" class="form-check-label" />
+      </div>
     </th>
     <th v-for="(column, index) in columns"
       :key="index"
