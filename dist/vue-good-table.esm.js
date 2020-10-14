@@ -8521,9 +8521,9 @@ var __vue_render__$4 = function __vue_render__() {
   }) : _vm._e(), _vm._v(" "), _vm.selectable ? _c('th', {
     staticClass: "vgt-checkbox-col"
   }, [_c('div', {
-    staticClass: "form-check"
+    staticClass: "custom-control custom-checkbox "
   }, [_c('input', {
-    staticClass: "form-check-input",
+    staticClass: "custom-control-input",
     attrs: {
       "id": "header-checkbox",
       "type": "checkbox"
@@ -8536,7 +8536,7 @@ var __vue_render__$4 = function __vue_render__() {
       "change": _vm.toggleSelectAll
     }
   }), _vm._v(" "), _c('label', {
-    staticClass: "form-check-label",
+    staticClass: "custom-control-label",
     attrs: {
       "for": "header-checkbox"
     }
@@ -8585,7 +8585,7 @@ var __vue_staticRenderFns__$4 = [];
 var __vue_inject_styles__$4 = undefined;
 /* scoped */
 
-var __vue_scope_id__$4 = "data-v-77fc9158";
+var __vue_scope_id__$4 = "data-v-1184def6";
 /* module identifier */
 
 var __vue_module_identifier__$4 = undefined;
